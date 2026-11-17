@@ -2,17 +2,17 @@
 
 ## Thông tin nhóm
 
-- Tên nhóm:
-- Lớp: L3A
-- Repo nhóm: `K5-L3A-DAY08-TenNhom-FromWorkflowsToAgents` (xem [SUBMISSION.md](SUBMISSION.md))
-- URL repo, nhánh nộp, commit chốt:
+- Tên nhóm: Tetris
+- Lớp: L3B
+- Repo nhóm: https://github.com/kanartificial/K5-L3B-DAY08-Tetris-FromWorkflowsToAgents
+- URL repo, nhánh nộp, commit chốt: nhánh `main`, commit chốt `9bd80fc`
 
 ## Thành viên
 
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
 |   1 |        |      |       |        |         |
-|   2 |        |      |       |        |         |
+|   2 | Võ Thị Kim Ý | 2A202603965 | kimy2212004@gmail.com | KimY22-it | Shape B (`single.py`), CP2 + CP3 |
 
 Gợi ý chia vai:
 
@@ -26,6 +26,7 @@ Gợi ý chia vai:
 | Người | Vai | Commit | Test đã thêm hoặc sửa |
 | --- | --- | --- | --- |
 | | | | |
+| Võ Thị Kim Ý | Shape B (`single.py`), CP2 + CP3 | `6ef75bd` | Không |
 
 ## Cá nhân
 
