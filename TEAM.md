@@ -2,16 +2,16 @@
 
 ## Thông tin nhóm
 
-- Tên nhóm:
-- Lớp: L3A
-- Repo nhóm: `K5-L3A-DAY08-TenNhom-FromWorkflowsToAgents` (xem [SUBMISSION.md](SUBMISSION.md))
+- Tên nhóm:Tetris
+- Lớp: L3B
+- Repo nhóm: K5-L3B-DAY08-Tetris-FromWorkflowsToAgents
 - URL repo, nhánh nộp, commit chốt:
 
 ## Thành viên
 
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
-|   1 |        |      |       |        |         |
+|   1 |Lê Thị Ly|2A202603989|lethily100202@gmail.com|https://github.com/LyLe10|CP3: kiểm chứng ledger/idempotency; CP4: safety/crash; CP5: benchmark, evaluation và báo cáo|
 |   2 |        |      |       |        |         |
 
 Gợi ý chia vai:
@@ -25,7 +25,8 @@ Gợi ý chia vai:
 
 | Người | Vai | Commit | Test đã thêm hoặc sửa |
 | --- | --- | --- | --- |
-| | | | |
+|Người	Vai	Commit	Test đã thêm hoặc sửa
+Lê Thị Ly |	CP3/CP4 kiểm thử và kiểm chứng; CP5 benchmark, crash report, ADR và báo cáo cá nhân |[`9bd80fc`](https://github.com/kanartificial/K5-L3B-DAY08-Tetris-FromWorkflowsToAgents/commit/9bd80fc) (benchmark/crash JSON); [`8a2e603`](https://github.com/kanartificial/K5-L3B-DAY08-Tetris-FromWorkflowsToAgents/commit/8a2e603) (ADR); [`a7d8d6f`](https://github.com/kanartificial/K5-L3B-DAY08-Tetris-FromWorkflowsToAgents/commit/a7d8d6f) (báo cáo cá nhân)| |
 
 ## Cá nhân
 
