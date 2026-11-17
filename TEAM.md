@@ -13,6 +13,7 @@
 | --: | ------ | ---- | ----- | ------ | ------- |
 |   1 |Lê Thị Ly|2A202603989|lethily100202@gmail.com|https://github.com/LyLe10|CP3: kiểm chứng ledger/idempotency; CP4: safety/crash; CP5: benchmark, evaluation và báo cáo|
 |   2 | Khổng Ngọc Anh | 2A202603974 | ngocanhkhong1512@gmail.com | https://github.com/kanartificial | Orchestrator + Handoff (Shape C) |
+|   3 | Võ Thị Kim Ý | 2A202603965 | kimy2212004@gmail.com | https://github.com/KimY22-it | Shape B (`single.py`), CP2 + CP3 |
 
 Gợi ý chia vai:
 
@@ -27,6 +28,7 @@ Gợi ý chia vai:
 | --- | --- | --- | --- |
 | Lê Thị Ly | CP3/CP4 kiểm thử và kiểm chứng; CP5 benchmark, crash report, ADR và báo cáo cá nhân | [`9bd80fc`](https://github.com/kanartificial/K5-L3B-DAY08-Tetris-FromWorkflowsToAgents/commit/9bd80fc) (benchmark/crash JSON); [`8a2e603`](https://github.com/kanartificial/K5-L3B-DAY08-Tetris-FromWorkflowsToAgents/commit/8a2e603) (ADR); [`a7d8d6f`](https://github.com/kanartificial/K5-L3B-DAY08-Tetris-FromWorkflowsToAgents/commit/a7d8d6f) (báo cáo cá nhân) | |
 | Khổng Ngọc Anh | Orchestrator + Handoff (Shape C) | [`a6ed582`](https://github.com/kanartificial/K5-L3B-DAY08-Tetris-FromWorkflowsToAgents/commit/a6ed582) (orchestrator with handoff and crash check); [`e22aa7e`](https://github.com/kanartificial/K5-L3B-DAY08-Tetris-FromWorkflowsToAgents/commit/e22aa7e) (PR #1) | `pytest -m student -k orchestrator` (62/62 pass: T01–T14, T11 idempotency, T12 crash/resume) |
+| Võ Thị Kim Ý | Shape B (`single.py`), CP2 + CP3 | [`6ef75bd`](https://github.com/VinUni-AI20k/K5-Day8-From-Workflows-to-Agents/commit/6ef75bdc4b682d2c974a706e95ab87a9030e9c50) (single agent)| Không |
 
 ## Cá nhân
 
