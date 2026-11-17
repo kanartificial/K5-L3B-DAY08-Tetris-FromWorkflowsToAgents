@@ -5,14 +5,14 @@
 - Tên nhóm:Tetris
 - Lớp: L3B
 - Repo nhóm: K5-L3B-DAY08-Tetris-FromWorkflowsToAgents
-- URL repo, nhánh nộp, commit chốt:
+- URL repo, nhánh nộp, commit chốt: `9bd80fc`
 
 ## Thành viên
 
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
 |   1 |Lê Thị Ly|2A202603989|lethily100202@gmail.com|https://github.com/LyLe10|CP3: kiểm chứng ledger/idempotency; CP4: safety/crash; CP5: benchmark, evaluation và báo cáo|
-|   2 |        |      |       |        |         |
+|   2 | Khổng Ngọc Anh | 2A202603974 | ngocanhkhong1512@gmail.com | https://github.com/kanartificial | Orchestrator + Handoff (Shape C) |
 
 Gợi ý chia vai:
 
@@ -25,8 +25,8 @@ Gợi ý chia vai:
 
 | Người | Vai | Commit | Test đã thêm hoặc sửa |
 | --- | --- | --- | --- |
-|Người	Vai	Commit	Test đã thêm hoặc sửa
-Lê Thị Ly |	CP3/CP4 kiểm thử và kiểm chứng; CP5 benchmark, crash report, ADR và báo cáo cá nhân |[`9bd80fc`](https://github.com/kanartificial/K5-L3B-DAY08-Tetris-FromWorkflowsToAgents/commit/9bd80fc) (benchmark/crash JSON); [`8a2e603`](https://github.com/kanartificial/K5-L3B-DAY08-Tetris-FromWorkflowsToAgents/commit/8a2e603) (ADR); [`a7d8d6f`](https://github.com/kanartificial/K5-L3B-DAY08-Tetris-FromWorkflowsToAgents/commit/a7d8d6f) (báo cáo cá nhân)| |
+| Lê Thị Ly | CP3/CP4 kiểm thử và kiểm chứng; CP5 benchmark, crash report, ADR và báo cáo cá nhân | [`9bd80fc`](https://github.com/kanartificial/K5-L3B-DAY08-Tetris-FromWorkflowsToAgents/commit/9bd80fc) (benchmark/crash JSON); [`8a2e603`](https://github.com/kanartificial/K5-L3B-DAY08-Tetris-FromWorkflowsToAgents/commit/8a2e603) (ADR); [`a7d8d6f`](https://github.com/kanartificial/K5-L3B-DAY08-Tetris-FromWorkflowsToAgents/commit/a7d8d6f) (báo cáo cá nhân) | |
+| Khổng Ngọc Anh | Orchestrator + Handoff (Shape C) | [`a6ed582`](https://github.com/kanartificial/K5-L3B-DAY08-Tetris-FromWorkflowsToAgents/commit/a6ed582) (orchestrator with handoff and crash check); [`e22aa7e`](https://github.com/kanartificial/K5-L3B-DAY08-Tetris-FromWorkflowsToAgents/commit/e22aa7e) (PR #1) | `pytest -m student -k orchestrator` (62/62 pass: T01–T14, T11 idempotency, T12 crash/resume) |
 
 ## Cá nhân
 
