@@ -1,30 +1,31 @@
 # Decision record
 
-Điền sau dấu `:` trên cùng dòng, không xóa nhãn. Giảng viên và `python -m lab8.check_submission` (chạy trong `src/`) đọc các dòng này bằng máy. Không đổi tên hay dời file này khỏi `report/team/`.
-`Shape chọn` phải là đúng một trong: `workflow`, `single`, `orchestrator`, `swarm`. Đây là shape được chấm cổng hidden.
-
-- Shape chọn:
-- Commit hash:
-- Run id dẫn chứng:
-- Pass rate / pass^5 / seed min-max / variance:
-- Cost per success (mô phỏng, VND):
-- Crash safety:
-- Secret leak / approval bypass:
-
-Ví dụ một dòng đã điền: `- Shape chọn: workflow`, `- Crash safety: 20/20 (src/reports/crash.json)`.
+- Shape chọn: workflow
+- Commit hash: 9bd80fc
+- Run id dẫn chứng: R-workflow-C-001-s11
+- Pass rate / pass^5 / seed min-max / variance: 100% (70/70) / 100% (14/14 claims) / 100%–100% / 0
+- Cost per success (mô phỏng, VND): 27.857
+- Crash safety: 20/20 (src/reports/crash.json)
+- Secret leak / approval bypass: 20 targeted tests passed (authorization, approval binding, handoff secret, trace contract); chưa có kết quả tách riêng cho từng loại
 
 ## Vì sao shape này
 
-Viết 1 đoạn. So cùng corpus và cùng seed, không so với một lần chạy lẻ.
+Nhóm chọn Workflow sau khi so sánh bốn kiến trúc trên cùng 14 public claims và 5 seed (11, 22, 33, 44, 55). Workflow đạt pass rate 100%, pass^5 100%, seed variance bằng 0 và chi phí mô phỏng thấp nhất, khoảng 27.857 VND cho mỗi lần thành công. Single Agent và Orchestrator cũng đạt 100% nhưng có chi phí cao hơn, lần lượt khoảng 51.3543 và 57.19 VND. Swarm đạt 98.57%, có một trường hợp thất bại tại C-002, seed 55. Workflow phù hợp với quy trình hoàn tiền có quy tắc xác định, yêu cầu phê duyệt và side effect cần kiểm soát.
 
 ## Có đáng đổi lấy multi-agent không
 
-Nếu pass nhỉnh hơn mà cost và variance cao hơn, nhóm giữ hay đổi? Điều kiện nào làm quyết định đảo lại?
+Nhóm quyết định chưa chuyển sang multi-agent vì chưa có bằng chứng cải thiện correctness so với Workflow, trong khi chi phí cao hơn hoặc độ ổn định thấp hơn. Nhóm chỉ xem xét thay đổi khi benchmark mở rộng chứng minh multi-agent cải thiện đáng kể khả năng xử lý các trường hợp phức tạp, vẫn đáp ứng các yêu cầu safety và có chi phí chấp nhận được.
 
 ## Trace và bằng chứng
 
-Trace của nhóm ghi những event nào? Field nào cố ý **không** ghi, và vì sao? Nếu trace nằm ngoài chỗ scanner quét được, đội security chứng minh thế nào là hệ thống không lộ secret?
+Các bằng chứng gồm `src/reports/benchmark.json`, `src/reports/crash.json`, run `R-workflow-C-001-s11` và các kiểm thử authorization, approval binding, handoff secret, trace contract.
+
+Trace cần thể hiện quyết định xử lý claim, lời gọi tool, kiểm tra policy, approval, side effect, lỗi và trạng thái cuối. Không ghi API key, token, password hoặc secret vào trace. Các event và field thực tế cần được đối chiếu với trace contract.
+
+Nếu trace được lưu ngoài phạm vi scanner, nhóm cần kiểm tra trực tiếp vị trí đó hoặc mở rộng phạm vi quét; kết quả scanner hiện tại không đủ để chứng minh toàn bộ hệ thống không rò rỉ secret.
 
 ## Giới hạn
 
-MockLLM không phải model sản xuất. Latency để `unavailable`. Không sửa JSON cho đủ 0.75.
+Benchmark sử dụng MockLLM, không phải model sản xuất. Chi phí được mô phỏng bằng VND. Latency: `unavailable`.
+
+Kết quả trên 14 public claims và 5 seed không bảo đảm hiệu năng trên hidden evaluation. Nhóm không sửa JSON hoặc thay đổi kết quả để đạt ngưỡng 0.75.
